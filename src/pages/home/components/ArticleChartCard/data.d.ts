@@ -1,6 +1,5 @@
 export interface IArticleChartData {
-	total: number;
-	num: number;
-	week: number;
-	day: number;
+	allUserCount: number;
+	amidUserCount: number;
+	userCount: number;
 }

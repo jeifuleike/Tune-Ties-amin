@@ -2,7 +2,7 @@ import request from "@/utils/request";
 
 export async function queryUserInfo(): Promise<any> {
 	return request({
-		url: "/user/info",
+		url: "/user/userInfo",
 		method: "get",
 	});
 }

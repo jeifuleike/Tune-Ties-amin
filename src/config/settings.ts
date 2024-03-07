@@ -19,7 +19,7 @@ import {
 /**
  * @description: 站点名称
  */
-export const siteTitle: TSiteTitle = "Admin-Element-Vue";
+export const siteTitle: TSiteTitle = "音乐找友后台管理系统";
 
 /**
  * @description: 首页路由path
@@ -29,12 +29,12 @@ export const homePath: THomePath = "/home";
 /**
  * @description: 站点本地存储Token 的 Key值
  */
-export const siteTokenKey: TSiteTokenKey = "admin-element-vue-token";
+export const siteTokenKey: TSiteTokenKey = "token";
 
 /**
  * @description: Ajax请求头发送Token 的 Key值
  */
-export const ajaxHeadersTokenKey: TAjaxHeadersTokenKey = "x-token";
+export const ajaxHeadersTokenKey: TAjaxHeadersTokenKey = "Authorization";
 
 /**
  * @description: Ajax返回值不参加统一报错的api地址
@@ -49,7 +49,7 @@ export const theme: TTheme = "light";
 /**
  * @description: Layout 模板主题本地存储(localStorage)的key名称
  */
-export const themeStorageKey: TThemeStorageKey = "admin-element-vue-theme";
+export const themeStorageKey: TThemeStorageKey = "theme";
 
 /**
  * @description: Layout 菜单导航布局
@@ -59,7 +59,7 @@ export const menuLayout: TMenuLayout = "vertical";
 /**
  * @description: Layout 菜单导航布局本地存储(localStorage)的key名称
  */
-export const menuLayoutStorageKey: TMenuLayoutStorageKey = "admin-element-vue-memu-layout";
+export const menuLayoutStorageKey: TMenuLayoutStorageKey = "memu-layout";
 
 /**
  * @description: Layout 菜单导航风格
@@ -69,7 +69,7 @@ export const menuStyle: TMenuStyle = "dark";
 /**
  * @description: Layout 菜单导航风格本地存储(localStorage)的key名称
  */
-export const menuStyleStorageKey: TMenuStyleStorageKey = "admin-element-vue-memu-style";
+export const menuStyleStorageKey: TMenuStyleStorageKey = "memu-style";
 
 /**
  * @description: Layout 是否启用多标签Tab页

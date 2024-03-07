@@ -39,6 +39,7 @@ const onMenuClick = async (command: string) => {
 	}
 };
 </script>
+
 <template>
 	<el-dropdown @command="onMenuClick">
 		<span class="usermenu" :class="props.customClass" :title="userStore.name">
@@ -48,9 +49,9 @@ const onMenuClick = async (command: string) => {
 
 		<template #dropdown>
 			<el-dropdown-menu>
-				<el-dropdown-item command="userinfo">
+				<!-- <el-dropdown-item command="userinfo">
 					{{ t("member-layout.topmenu.userinfo") }}
-				</el-dropdown-item>
+				</el-dropdown-item> -->
 
 				<el-dropdown-item command="logout">
 					{{ t("member-layout.topmenu.logout") }}
@@ -59,6 +60,7 @@ const onMenuClick = async (command: string) => {
 		</template>
 	</el-dropdown>
 </template>
+
 <style lang="scss" scoped>
 .usermenu {
 	cursor: pointer;

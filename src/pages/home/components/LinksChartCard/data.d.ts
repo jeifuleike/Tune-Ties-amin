@@ -4,7 +4,6 @@ export interface IChartData {
 }
 
 export interface IWorksChartData {
-	total: number;
-	num: number;
-	chart: IChartData;
+	friendCount: number;
+	messageCount: number;
 }

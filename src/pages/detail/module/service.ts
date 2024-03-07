@@ -2,7 +2,7 @@ import request from "@/utils/request";
 
 export async function annualnewLinks(): Promise<any> {
 	return request({
-		url: "/home/chatStats",
+		url: "/socket/musicUsersList",
 		method: "get",
 	});
 }

@@ -95,6 +95,7 @@ const menuStyle = useMenuStyle();
 								</div>
 							</el-tooltip>
 						</template>
+
 						<template v-else>
 							<el-tooltip content="明亮" placement="top">
 								<div
@@ -124,6 +125,7 @@ const menuStyle = useMenuStyle();
 							</el-tooltip>
 						</template>
 					</template>
+
 					<template v-else>
 						<template v-if="isDark">
 							<el-tooltip content="明亮" placement="top">
@@ -139,6 +141,7 @@ const menuStyle = useMenuStyle();
 								</div>
 							</el-tooltip>
 						</template>
+
 						<template v-else>
 							<el-tooltip content="明亮" placement="top">
 								<div
@@ -177,6 +180,7 @@ const menuStyle = useMenuStyle();
 		</el-drawer>
 	</span>
 </template>
+
 <style lang="scss" scoped>
 .setting {
 	display: flex;

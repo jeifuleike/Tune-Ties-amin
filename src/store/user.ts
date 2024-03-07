@@ -20,7 +20,7 @@ export interface IUserState {
 export const useUserStore = defineStore("useUserStore", {
 	state: (): IUserState => {
 		return {
-			id: 0,
+			id: -1,
 			name: "",
 			roles: [],
 		};
@@ -28,7 +28,7 @@ export const useUserStore = defineStore("useUserStore", {
 	getters: {
 		// 是否登录
 		isLogin({ id }) {
-			return id > 0;
+			return id > -1;
 		},
 	},
 	actions: {

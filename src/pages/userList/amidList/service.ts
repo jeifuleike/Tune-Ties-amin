@@ -1,25 +1,25 @@
 import request from "@/utils/request";
-import { IQueryParams, ITableListItem } from "./data.d";
+import { IQueryParams, createdFinishData } from "./data";
 
 export async function queryList(params?: IQueryParams): Promise<any> {
 	return request({
-		url: "/pages/list",
-		method: "get",
+		url: "/user/amidList",
+		method: "GET",
 		params,
 	});
 }
 
-export async function createData(params: Omit<ITableListItem, "id">): Promise<any> {
+export async function createData(params: Omit<createdFinishData, "id">): Promise<any> {
 	return request({
-		url: "/pages/list",
+		url: "/user/addAmid",
 		method: "POST",
 		data: params,
 	});
 }
 
-export async function updateData(id: number, params: Omit<ITableListItem, "id">): Promise<any> {
+export async function updateData(id: number, params: Omit<createdFinishData, "id">): Promise<any> {
 	return request({
-		url: `/pages/list/${id}`,
+		url: `/user/changeAmidInfo/${id}`,
 		method: "PUT",
 		data: params,
 	});
@@ -27,7 +27,7 @@ export async function updateData(id: number, params: Omit<ITableListItem, "id">)
 
 export async function removeData(id: number): Promise<any> {
 	return request({
-		url: `/pages/list/${id}`,
+		url: `/user/deleteAmid/${id}`,
 		method: "delete",
 	});
 }

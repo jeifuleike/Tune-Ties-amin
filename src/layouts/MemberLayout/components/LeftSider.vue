@@ -26,7 +26,7 @@ const { menuData, routeItem, userRoles, collapsed } = toRefs(props);
 			<div class="member-layout-left-logo">
 				<router-link to="/" class="logo-url">
 					<img class="img" alt="" src="../../../assets/images/logo.png" />
-					<span v-if="!collapsed" class="text">Admin Element Vue</span>
+					<span v-if="!collapsed" class="text">音乐找友系统</span>
 				</router-link>
 			</div>
 

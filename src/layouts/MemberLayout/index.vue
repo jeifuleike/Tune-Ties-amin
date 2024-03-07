@@ -52,10 +52,6 @@ useTitle(routeItem, t);
 			/>
 
 			<Main :route-item="routeItem" />
-
-			<div v-if="globalStore.isLayoutFooter" class="member-layout-right-footer">
-				Copyright © 2020 liqingsong.cc, All Rights Reserved
-			</div>
 		</div>
 	</div>
 </template>

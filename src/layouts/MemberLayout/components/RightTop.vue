@@ -2,7 +2,7 @@
 import { toRefs } from "vue";
 import { RouteRecordRaw } from "vue-router";
 import IconSvg from "@/components/IconSvg/index.vue";
-import SelectLang from "@/components/SelectLang/index.vue";
+// import SelectLang from "@/components/SelectLang/index.vue";
 import BreadCrumbs from "./BreadCrumbs.vue";
 import RightTopUser from "./RightTopUser.vue";
 import RightTopTabNav from "./RightTopTabNav.vue";
@@ -62,7 +62,7 @@ const toggleCollapsed = () => {
 					<div class="member-layout-right-header-logo">
 						<router-link to="/" class="logo-url">
 							<img class="img" alt="" src="../../../assets/images/logo.png" />
-							<span class="text">Admin Element Vue</span>
+							<span class="text">音乐找友后台管理系统</span>
 						</router-link>
 					</div>
 					<div class="member-layout-right-header-main-box">
@@ -73,7 +73,7 @@ const toggleCollapsed = () => {
 				</div>
 				<div class="member-layout-right-header-right">
 					<RightTopUser custom-class="member-layout-right-header-right-item" />
-					<SelectLang custom-class="member-layout-right-header-right-item" />
+					<!-- <SelectLang custom-class="member-layout-right-header-right-item" /> -->
 					<Settings custom-class="member-layout-right-header-right-item" />
 				</div>
 			</div>

@@ -4,12 +4,23 @@ import { useRouter } from "vue-router";
 import { ElMessage } from "element-plus";
 import { useUserStore } from "@/store/user";
 import PageLoading from "@/components/PageLoading/index.vue";
+import { getToken } from "@/utils/localToken";
 
 const router = useRouter();
 const userStore = useUserStore();
 
 // 读取当前用户信息
 const getUser = async () => {
+	if (!getToken()) {
+		router.replace({
+			path: "/user/login",
+			query: {
+				redirect: router.currentRoute.value.path,
+				...router.currentRoute.value.query,
+			},
+		});
+		return;
+	}
 	const { code, msg } = await userStore.getInfo();
 	if (code === 1) {
 		// 未登录或登入信息失效

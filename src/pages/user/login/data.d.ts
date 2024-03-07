@@ -1,4 +1,10 @@
 export interface LoginParamsType {
-	username: string;
+	userName: string;
 	password: string;
+}
+
+export interface registerParamsType {
+	userName: string;
+	password: string;
+	aminKey: string;
 }
